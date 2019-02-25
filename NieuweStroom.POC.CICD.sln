@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NieuweStroom.POC.CICD", "NieuweStroom.POC.CICD\NieuweStroom.POC.CICD.csproj", "{5F53A579-F6B5-43C9-9D3D-F5F4F683FD00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NieuweStroom.POC.CICD", "NieuweStroom.POC.CICD\NieuweStroom.POC.CICD.csproj", "{5F53A579-F6B5-43C9-9D3D-F5F4F683FD00}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NieuwStroom.POC.CICD.Test", "NieuwStroom.POC.CICD.Test\NieuwStroom.POC.CICD.Test.csproj", "{D04CB509-B698-4E1F-8108-742F141EDF0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCProject", "MVCProject\MVCProject.csproj", "{1788625F-FCBE-4531-8A16-61A119FF274C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{5F53A579-F6B5-43C9-9D3D-F5F4F683FD00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F53A579-F6B5-43C9-9D3D-F5F4F683FD00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F53A579-F6B5-43C9-9D3D-F5F4F683FD00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D04CB509-B698-4E1F-8108-742F141EDF0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D04CB509-B698-4E1F-8108-742F141EDF0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D04CB509-B698-4E1F-8108-742F141EDF0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D04CB509-B698-4E1F-8108-742F141EDF0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1788625F-FCBE-4531-8A16-61A119FF274C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1788625F-FCBE-4531-8A16-61A119FF274C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1788625F-FCBE-4531-8A16-61A119FF274C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1788625F-FCBE-4531-8A16-61A119FF274C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
