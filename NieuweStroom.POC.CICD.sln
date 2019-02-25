@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NieuweStroom.POC.CICD", "Ni
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NieuwStroom.POC.CICD.Test", "NieuwStroom.POC.CICD.Test\NieuwStroom.POC.CICD.Test.csproj", "{D04CB509-B698-4E1F-8108-742F141EDF0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCProject", "MVCProject\MVCProject.csproj", "{1788625F-FCBE-4531-8A16-61A119FF274C}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{D04CB509-B698-4E1F-8108-742F141EDF0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D04CB509-B698-4E1F-8108-742F141EDF0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D04CB509-B698-4E1F-8108-742F141EDF0F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1788625F-FCBE-4531-8A16-61A119FF274C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1788625F-FCBE-4531-8A16-61A119FF274C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1788625F-FCBE-4531-8A16-61A119FF274C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1788625F-FCBE-4531-8A16-61A119FF274C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
