@@ -1,6 +1,4 @@
-pipeline {
-	agent any
-	node {
+node {
 	   stage('init') {
 		  checkout scm
 	   }
@@ -18,4 +16,3 @@ pipeline {
 		  resourceGroup: env.RES_GROUP, appName: env.WEB_APP, filePath: "**/todo.zip"
 	   }
 	}
-}
