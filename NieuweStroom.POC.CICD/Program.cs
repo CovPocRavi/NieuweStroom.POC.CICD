@@ -15,7 +15,7 @@ namespace NieuweStroom.POC.CICD
         public static void Main(string[] args)
         {
             CreateWebHostBuilder(args).Build().Run();
-            Console.WriteLine("Testing Jenkins BUild")
+            Console.WriteLine("Testing Jenkins BUild");
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
