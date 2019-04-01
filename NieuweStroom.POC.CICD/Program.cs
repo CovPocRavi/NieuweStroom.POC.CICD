@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
+
 namespace NieuweStroom.POC.CICD
 {
     public class Program
@@ -15,7 +16,6 @@ namespace NieuweStroom.POC.CICD
         public static void Main(string[] args)
         {
             CreateWebHostBuilder(args).Build().Run();
-            Console.WriteLine("Testing pullrequestje 11:07");
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
