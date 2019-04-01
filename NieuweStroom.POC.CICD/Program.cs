@@ -13,12 +13,12 @@ namespace NieuweStroom.POC.CICD
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public void Main(string[] args)
         {
             CreateWebHostBuilder(args).Build().Run();
         }
 
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+        public IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>();
     }
