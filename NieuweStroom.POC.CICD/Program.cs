@@ -15,7 +15,7 @@ namespace NieuweStroom.POC.CICD
         public static void Main(string[] args)
         {
             CreateWebHostBuilder(args).Build().Run();
-            Console.WriteLine("Testing Pullrequest Fu=y");
+            Console.WriteLine("Testing pullrequestje 11:07");
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
