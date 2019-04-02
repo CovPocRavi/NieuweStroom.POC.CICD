@@ -7,9 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NieuweStroom.POC.CICD", "Ni
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NieuwStroom.POC.CICD.Test", "NieuwStroom.POC.CICD.Test\NieuwStroom.POC.CICD.Test.csproj", "{D04CB509-B698-4E1F-8108-742F141EDF0F}"
 EndProject
-Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "ServiceFabricApplicationNieuweStroom", "ServiceFabricApplicationNieuweStroom\ServiceFabricApplicationNieuweStroom.sfproj", "{20FEBA55-4707-4367-B26A-A35F08CA71E5}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NieuweStroomSF", "NieuweStroomSF\NieuweStroomSF.csproj", "{7D5695FE-44E3-464D-9696-7DC6A355AEF6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NieuweStroomSF", "NieuweStroomSF\NieuweStroomSF.csproj", "{7D5695FE-44E3-464D-9696-7DC6A355AEF6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,14 +33,6 @@ Global
 		{D04CB509-B698-4E1F-8108-742F141EDF0F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D04CB509-B698-4E1F-8108-742F141EDF0F}.Release|x64.ActiveCfg = Release|Any CPU
 		{D04CB509-B698-4E1F-8108-742F141EDF0F}.Release|x64.Build.0 = Release|Any CPU
-		{20FEBA55-4707-4367-B26A-A35F08CA71E5}.Debug|Any CPU.ActiveCfg = Debug|x64
-		{20FEBA55-4707-4367-B26A-A35F08CA71E5}.Debug|x64.ActiveCfg = Debug|x64
-		{20FEBA55-4707-4367-B26A-A35F08CA71E5}.Debug|x64.Build.0 = Debug|x64
-		{20FEBA55-4707-4367-B26A-A35F08CA71E5}.Debug|x64.Deploy.0 = Debug|x64
-		{20FEBA55-4707-4367-B26A-A35F08CA71E5}.Release|Any CPU.ActiveCfg = Release|x64
-		{20FEBA55-4707-4367-B26A-A35F08CA71E5}.Release|x64.ActiveCfg = Release|x64
-		{20FEBA55-4707-4367-B26A-A35F08CA71E5}.Release|x64.Build.0 = Release|x64
-		{20FEBA55-4707-4367-B26A-A35F08CA71E5}.Release|x64.Deploy.0 = Release|x64
 		{7D5695FE-44E3-464D-9696-7DC6A355AEF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7D5695FE-44E3-464D-9696-7DC6A355AEF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D5695FE-44E3-464D-9696-7DC6A355AEF6}.Debug|x64.ActiveCfg = Debug|Any CPU
