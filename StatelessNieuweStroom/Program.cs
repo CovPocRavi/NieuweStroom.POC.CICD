@@ -20,6 +20,7 @@ namespace StatelessNieuweStroom
                 // Registering a service maps a service type name to a .NET type.
                 // When Service Fabric creates an instance of this service type,
                 // an instance of the class is created in this host process.
+                // test this thingy
 
                 ServiceRuntime.RegisterServiceAsync("StatelessNieuweStroomType",
                     context => new StatelessNieuweStroom(context)).GetAwaiter().GetResult();
