@@ -14,7 +14,8 @@ namespace NieuweStroom.POC.CICD
         
         public int CalculatePrice(int i, int j)
         {
-            return (i * j);
+            int k = i * j;
+            return (k);
         }
 
     }
