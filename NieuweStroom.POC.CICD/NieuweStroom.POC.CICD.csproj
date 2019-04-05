@@ -5,7 +5,6 @@
     <ApplicationIcon />
     <OutputType>WinExe</OutputType>
     <StartupObject />
-    <UserSecretsId>563348d9-26fa-4432-b0ab-311b91329a76</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
