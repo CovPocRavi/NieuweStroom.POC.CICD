@@ -12,7 +12,7 @@ namespace NieuweStroom.POC.CICD.Pages
 
         public void OnGet()
         {
-            Message = "Your application description page.";
+            Message = "We testen hier de About";
         }
     }
 }
