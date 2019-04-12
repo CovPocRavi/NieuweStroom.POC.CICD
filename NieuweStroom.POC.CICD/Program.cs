@@ -15,7 +15,6 @@ namespace NieuweStroom.POC.CICD
     {
         protected Program()
         {
-            //test build
         }
 
         public static void Main(string[] args)
