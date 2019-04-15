@@ -43,6 +43,12 @@ namespace NieuweStroom.POC.CICD.V2
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddMvc()
+                .SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
+                .AddRazorPagesOptions(options =>
+                {
+                    options.Conventions.AuthorizePage("/SecurePage");
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
