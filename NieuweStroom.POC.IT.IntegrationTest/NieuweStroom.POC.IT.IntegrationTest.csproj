@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CleanVidly\NieuweStroom.POC.IT.csproj" />
+    <ProjectReference Include="..\NieuweStroom.POC.IT\NieuweStroom.POC.IT.csproj" />
   </ItemGroup>
 
 </Project>
