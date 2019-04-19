@@ -1,6 +1,6 @@
 using FluentValidation;
 
-namespace NieuweStroom.POC.IT.Controllers.Roles
+namespace CleanVidly.Controllers.Roles
 {
     public class RoleValidator : AbstractValidator<SaveRoleResource>
     {

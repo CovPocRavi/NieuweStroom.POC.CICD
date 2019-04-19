@@ -11,9 +11,9 @@ Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "NieuweStroomSF", "NieuweStr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatelessNieuweStroom", "StatelessNieuweStroom\StatelessNieuweStroom.csproj", "{6E2A409F-7F32-4032-813D-0841256598FA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NieuweStroom.POC.IT", "CleanVidly\NieuweStroom.POC.IT.csproj", "{F8C22EFB-B4DF-44A5-A52F-FF6AC49E9A1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanVidly", "CleanVidly\CleanVidly.csproj", "{F8C22EFB-B4DF-44A5-A52F-FF6AC49E9A1C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NieuweStroom.POC.IT.IntegrationTest", "CleanVidly.IntegrationTest\NieuweStroom.POC.IT.IntegrationTest.csproj", "{66CA53BF-A6FA-42C3-B754-E7183ABA7E68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanVidly.IntegrationTest", "CleanVidly.IntegrationTest\CleanVidly.IntegrationTest.csproj", "{66CA53BF-A6FA-42C3-B754-E7183ABA7E68}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

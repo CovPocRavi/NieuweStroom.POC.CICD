@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using NieuweStroom.POC.IT.Controllers.Resources;
+using CleanVidly.Controllers.Resources;
 
-namespace NieuweStroom.POC.IT.Controllers.Users
+namespace CleanVidly.Controllers.Users
 {
     public class UserResource
     {

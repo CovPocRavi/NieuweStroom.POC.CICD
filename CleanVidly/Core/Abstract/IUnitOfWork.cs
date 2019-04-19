@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace NieuweStroom.POC.IT.Core.Abstract
+namespace CleanVidly.Core.Abstract
 {
     public interface IUnitOfWork
     {

@@ -4,12 +4,12 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
 using System.Text;
-using NieuweStroom.POC.IT.Controllers.Users;
+using CleanVidly.Controllers.Users;
+using CleanVidly.Core.Entities;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
-using NieuweStroom.POC.IT.Core.Entities;
 
-namespace NieuweStroom.POC.IT.Infrastructure
+namespace CleanVidly.Infrastructure
 {
     public class JwtAuthentication
     {

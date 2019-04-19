@@ -1,7 +1,7 @@
 using System.IO;
 using Microsoft.Extensions.Configuration;
 
-namespace NieuweStroom.POC.IT.IntegrationTest.Helpers
+namespace CleanVidly.IntegrationTest.Helpers
 {
     public class ConfigurationSingleton
     {

@@ -1,8 +1,8 @@
+using CleanVidly.Core.Abstract;
+using CleanVidly.Core.Entities;
 using Microsoft.EntityFrameworkCore;
-using NieuweStroom.POC.IT.Core.Abstract;
-using NieuweStroom.POC.IT.Core.Entities;
 
-namespace NieuweStroom.POC.IT.Persistance.Repositories
+namespace CleanVidly.Persistance.Repositories
 {
     public class RoleRepository : Repository<Role>, IRoleRepository
     {

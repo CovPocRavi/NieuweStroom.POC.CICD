@@ -3,18 +3,18 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
-using NieuweStroom.POC.IT.IntegrationTest.Extensions;
+using CleanVidly.Controllers.Resources;
+using CleanVidly.Core.Entities;
+using CleanVidly.Infrastructure;
+using CleanVidly.IntegrationTest.Extensions;
+using CleanVidly.IntegrationTest.Helpers;
+using CleanVidly.Persistance;
 using FluentAssertions;
 using Newtonsoft.Json;
-using NieuweStroom.POC.IT.Controllers.Resources;
-using NieuweStroom.POC.IT.Core.Entities;
-using NieuweStroom.POC.IT.Infrastructure;
-using NieuweStroom.POC.IT.IntegrationTest.Helpers;
-using NieuweStroom.POC.IT.Persistance;
 using Xunit;
 using Xunit.Abstractions;
 
-namespace NieuweStroom.POC.IT.IntegrationTest.Controllers.Auth
+namespace CleanVidly.IntegrationTest.Controllers.Auth
 {
     public class AuthControllerTests : IClassFixture<Request<Startup>>, IClassFixture<DbContextFactory>, IDisposable
     {

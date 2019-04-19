@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
-using NieuweStroom.POC.IT.Core.Abstract;
+using CleanVidly.Core.Abstract;
 
-namespace NieuweStroom.POC.IT.Persistance.Repositories
+namespace CleanVidly.Persistance.Repositories
 {
     public class UnitOfWork : IUnitOfWork
     {

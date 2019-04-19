@@ -2,7 +2,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
-namespace NieuweStroom.POC.IT.IntegrationTest.Extensions
+namespace CleanVidly.IntegrationTest.Extensions
 {
     public static class HttpResponseMessageExtensions
     {

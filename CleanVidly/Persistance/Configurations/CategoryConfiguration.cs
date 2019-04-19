@@ -1,8 +1,8 @@
+using CleanVidly.Core.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using NieuweStroom.POC.IT.Core.Entities;
 
-namespace NieuweStroom.POC.IT.Persistance.Configurations
+namespace CleanVidly.Persistance.Configurations
 {
     public class CategoryConfiguration : IEntityTypeConfiguration<Category>
     {

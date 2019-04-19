@@ -1,21 +1,21 @@
 using System;
+using CleanVidly.Persistance;
 using Xunit;
 using FluentAssertions;
 using System.Threading.Tasks;
 using System.Net.Http;
+using CleanVidly.Core.Entities;
 using System.Linq;
-using NieuweStroom.POC.IT.IntegrationTest.Extensions;
+using CleanVidly.IntegrationTest.Extensions;
 using System.IdentityModel.Tokens.Jwt;
 using System.Net;
 using Xunit.Abstractions;
 using Newtonsoft.Json;
-using NieuweStroom.POC.IT.Controllers.Resources;
-using NieuweStroom.POC.IT.Controllers.Users;
-using NieuweStroom.POC.IT.Core.Entities;
-using NieuweStroom.POC.IT.IntegrationTest.Helpers;
-using NieuweStroom.POC.IT.Persistance;
+using CleanVidly.Controllers.Resources;
+using CleanVidly.Controllers.Users;
+using CleanVidly.IntegrationTest.Helpers;
 
-namespace NieuweStroom.POC.IT.IntegrationTest.Controllers.Users
+namespace CleanVidly.IntegrationTest.Controllers.Users
 {
     public class UsersControllerTests : IClassFixture<Request<Startup>>, IClassFixture<DbContextFactory>, IDisposable
     {

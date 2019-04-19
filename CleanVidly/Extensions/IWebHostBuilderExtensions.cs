@@ -2,7 +2,7 @@ using System;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 
-namespace NieuweStroom.POC.IT.Extensions
+namespace CleanVidly.Extensions
 {
     public static class IWebHostBuilderExtensions
     {
