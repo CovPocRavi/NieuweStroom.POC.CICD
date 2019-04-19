@@ -1,13 +1,13 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
-using CleanVidly.Controllers.Resources;
-using CleanVidly.Core.Abstract;
-using CleanVidly.Core.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using NieuweStroom.POC.IT.Controllers.Resources;
+using NieuweStroom.POC.IT.Core.Abstract;
+using NieuweStroom.POC.IT.Core.Entities;
 
-namespace CleanVidly.Controllers.Roles
+namespace NieuweStroom.POC.IT.Controllers.Roles
 {
     [Route("api/roles")]
     [ApiController]

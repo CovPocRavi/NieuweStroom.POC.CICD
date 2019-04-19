@@ -1,4 +1,4 @@
-namespace CleanVidly.Core.Paging
+namespace NieuweStroom.POC.IT.Core.Paging
 {
     public interface IQueryObject
     {

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
-namespace CleanVidly.Controllers.Users
+namespace NieuweStroom.POC.IT.Controllers.Users
 {
     public class SaveUserResource
     {

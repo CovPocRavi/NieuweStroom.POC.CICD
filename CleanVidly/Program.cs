@@ -1,8 +1,8 @@
-﻿using CleanVidly.Extensions;
+﻿using NieuweStroom.POC.IT.Extensions;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace CleanVidly
+namespace NieuweStroom.POC.IT
 {
     public class Program
     {

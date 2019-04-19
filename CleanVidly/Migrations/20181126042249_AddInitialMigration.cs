@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace CleanVidly.Migrations
+namespace NieuweStroom.POC.IT.Migrations
 {
     public partial class AddInitialMigration : Migration
     {

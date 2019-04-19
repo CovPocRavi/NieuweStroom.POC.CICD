@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
-namespace CleanVidly.Core.Entities
+namespace NieuweStroom.POC.IT.Core.Entities
 {
     public class User
     {

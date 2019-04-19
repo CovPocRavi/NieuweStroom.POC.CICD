@@ -3,16 +3,16 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
-using CleanVidly.Controllers.Resources;
-using CleanVidly.Core.Entities;
-using CleanVidly.IntegrationTest.Extensions;
-using CleanVidly.IntegrationTest.Helpers;
-using CleanVidly.Persistance;
+using NieuweStroom.POC.IT.IntegrationTest.Extensions;
 using FluentAssertions;
+using NieuweStroom.POC.IT.Controllers.Resources;
+using NieuweStroom.POC.IT.Core.Entities;
+using NieuweStroom.POC.IT.IntegrationTest.Helpers;
+using NieuweStroom.POC.IT.Persistance;
 using Xunit;
 using Xunit.Abstractions;
 
-namespace CleanVidly.IntegrationTest.Controllers.Roles
+namespace NieuweStroom.POC.IT.IntegrationTest.Controllers.Roles
 {
     public class RolesControllerPutTests : IClassFixture<Request<Startup>>, IClassFixture<DbContextFactory>, IDisposable
     {

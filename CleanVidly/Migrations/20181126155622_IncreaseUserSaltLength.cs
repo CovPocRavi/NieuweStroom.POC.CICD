@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace CleanVidly.Migrations
+namespace NieuweStroom.POC.IT.Migrations
 {
     public partial class IncreaseUserSaltLength : Migration
     {

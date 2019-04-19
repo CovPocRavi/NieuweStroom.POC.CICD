@@ -1,10 +1,10 @@
 using System.Linq;
 using AutoMapper;
-using CleanVidly.Controllers.Resources;
-using CleanVidly.Controllers.Users;
-using CleanVidly.Core.Entities;
+using NieuweStroom.POC.IT.Controllers.Resources;
+using NieuweStroom.POC.IT.Controllers.Users;
+using NieuweStroom.POC.IT.Core.Entities;
 
-namespace CleanVidly.Mapping
+namespace NieuweStroom.POC.IT.Mapping
 {
     public class EntitiesMapping : Profile
     {

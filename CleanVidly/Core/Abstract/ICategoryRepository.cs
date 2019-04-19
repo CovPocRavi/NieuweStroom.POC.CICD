@@ -1,6 +1,6 @@
-using CleanVidly.Core.Entities;
+using NieuweStroom.POC.IT.Core.Entities;
 
-namespace CleanVidly.Core.Abstract
+namespace NieuweStroom.POC.IT.Core.Abstract
 {
     public interface ICategoryRepository : IRepository<Category>
     {
