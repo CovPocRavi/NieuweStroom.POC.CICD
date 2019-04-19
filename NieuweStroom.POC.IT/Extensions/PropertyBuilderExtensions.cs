@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace CleanVidly.Extensions
+namespace NieuweStroom.POC.IT.Extensions
 {
     public static class PropertyBuilderExtensions
     {

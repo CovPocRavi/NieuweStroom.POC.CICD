@@ -1,12 +1,12 @@
 using System;
-using CleanVidly.Persistance;
+using NieuweStroom.POC.IT.Persistance;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Xunit;
 
 [assembly: CollectionBehavior(DisableTestParallelization = true)]
-namespace CleanVidly.IntegrationTest.Helpers
+namespace NieuweStroom.POC.IT.IntegrationTest.Helpers
 {
     public class DbContextFactory : IDisposable
     {

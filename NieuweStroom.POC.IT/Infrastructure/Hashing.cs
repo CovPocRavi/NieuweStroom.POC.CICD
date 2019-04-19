@@ -2,7 +2,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace CleanVidly.Infrastructure
+namespace NieuweStroom.POC.IT.Infrastructure
 {
     public static class Hashing
     {

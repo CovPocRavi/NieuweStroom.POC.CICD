@@ -1,4 +1,4 @@
-namespace CleanVidly.Controllers.Categories
+namespace NieuweStroom.POC.IT.Controllers.Categories
 {
     public class SaveCategoryResource
     {

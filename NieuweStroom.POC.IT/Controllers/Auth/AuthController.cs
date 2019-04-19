@@ -6,17 +6,17 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
-using CleanVidly.Controllers.Users;
-using CleanVidly.Core.Abstract;
-using CleanVidly.Core.Entities;
-using CleanVidly.Extensions;
-using CleanVidly.Infrastructure;
+using NieuweStroom.POC.IT.Controllers.Users;
+using NieuweStroom.POC.IT.Core.Abstract;
+using NieuweStroom.POC.IT.Core.Entities;
+using NieuweStroom.POC.IT.Extensions;
+using NieuweStroom.POC.IT.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 
-namespace CleanVidly.Controllers.Auth
+namespace NieuweStroom.POC.IT.Controllers.Auth
 {
     [Route("/api/auth")]
     [ApiController]

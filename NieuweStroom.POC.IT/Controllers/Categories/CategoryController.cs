@@ -1,14 +1,14 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
-using CleanVidly.Controllers.Resources;
-using CleanVidly.Core.Abstract;
-using CleanVidly.Core;
-using CleanVidly.Core.Entities;
+using NieuweStroom.POC.IT.Controllers.Resources;
+using NieuweStroom.POC.IT.Core.Abstract;
+using NieuweStroom.POC.IT.Core;
+using NieuweStroom.POC.IT.Core.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 
-namespace CleanVidly.Controllers.Categories
+namespace NieuweStroom.POC.IT.Controllers.Categories
 {
     [ApiController]
     [Route("/api/categories")]

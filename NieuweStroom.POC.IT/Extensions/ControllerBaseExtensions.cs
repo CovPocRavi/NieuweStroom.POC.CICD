@@ -1,8 +1,8 @@
 using System.Threading.Tasks;
-using CleanVidly.Controllers.Resources;
+using NieuweStroom.POC.IT.Controllers.Resources;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CleanVidly.Extensions
+namespace NieuweStroom.POC.IT.Extensions
 {
     public static class ControllerBaseExtensions
     {

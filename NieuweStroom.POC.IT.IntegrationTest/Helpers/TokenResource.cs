@@ -1,4 +1,4 @@
-namespace CleanVidly.IntegrationTest.Helpers
+namespace NieuweStroom.POC.IT.IntegrationTest.Helpers
 {
     public class TokenResource
     {

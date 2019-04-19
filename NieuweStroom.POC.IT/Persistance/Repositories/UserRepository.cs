@@ -1,11 +1,11 @@
 using System;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using CleanVidly.Core.Abstract;
-using CleanVidly.Core.Entities;
+using NieuweStroom.POC.IT.Core.Abstract;
+using NieuweStroom.POC.IT.Core.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace CleanVidly.Persistance.Repositories
+namespace NieuweStroom.POC.IT.Persistance.Repositories
 {
     public class UserRepository : Repository<User>, IUserRepository
     {

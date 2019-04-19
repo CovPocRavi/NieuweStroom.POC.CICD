@@ -1,6 +1,6 @@
 using FluentValidation;
 
-namespace CleanVidly.Controllers.Auth
+namespace NieuweStroom.POC.IT.Controllers.Auth
 {
     public class AuthValidator : AbstractValidator<AuthResource>
     {

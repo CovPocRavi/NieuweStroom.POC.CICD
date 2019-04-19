@@ -1,9 +1,9 @@
 using System.Reflection;
-using CleanVidly.Core.Entities;
+using NieuweStroom.POC.IT.Core.Entities;
 using JetBrains.Annotations;
 using Microsoft.EntityFrameworkCore;
 
-namespace CleanVidly.Persistance
+namespace NieuweStroom.POC.IT.Persistance
 {
     public class CleanVidlyDbContext : DbContext
     {

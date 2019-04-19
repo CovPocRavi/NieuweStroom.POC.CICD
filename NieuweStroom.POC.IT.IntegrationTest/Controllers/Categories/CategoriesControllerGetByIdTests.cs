@@ -1,16 +1,16 @@
 using System;
 using System.Net;
 using System.Threading.Tasks;
-using CleanVidly.Controllers.Resources;
-using CleanVidly.Core.Entities;
-using CleanVidly.IntegrationTest.Extensions;
-using CleanVidly.IntegrationTest.Helpers;
-using CleanVidly.Persistance;
+using NieuweStroom.POC.IT.Controllers.Resources;
+using NieuweStroom.POC.IT.Core.Entities;
+using NieuweStroom.POC.IT.IntegrationTest.Extensions;
+using NieuweStroom.POC.IT.IntegrationTest.Helpers;
+using NieuweStroom.POC.IT.Persistance;
 using FluentAssertions;
 using Xunit;
 using Xunit.Abstractions;
 
-namespace CleanVidly.IntegrationTest.Controllers.Categories
+namespace NieuweStroom.POC.IT.IntegrationTest.Controllers.Categories
 {
     public class CategoriesControllerGetByIdTests : IClassFixture<Request<Startup>>, IClassFixture<DbContextFactory>, IDisposable
     {

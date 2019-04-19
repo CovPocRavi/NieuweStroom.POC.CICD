@@ -1,11 +1,11 @@
 using System.Linq;
 using AutoMapper;
-using CleanVidly.Controllers.Categories;
-using CleanVidly.Controllers.Roles;
-using CleanVidly.Controllers.Users;
-using CleanVidly.Core.Entities;
+using NieuweStroom.POC.IT.Controllers.Categories;
+using NieuweStroom.POC.IT.Controllers.Roles;
+using NieuweStroom.POC.IT.Controllers.Users;
+using NieuweStroom.POC.IT.Core.Entities;
 
-namespace CleanVidly.Mapping
+namespace NieuweStroom.POC.IT.Mapping
 {
     public class ResourcesMapping : Profile
     {

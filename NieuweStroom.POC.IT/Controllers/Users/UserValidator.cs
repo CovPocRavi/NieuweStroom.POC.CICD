@@ -1,6 +1,6 @@
 using FluentValidation;
 
-namespace CleanVidly.Controllers.Users
+namespace NieuweStroom.POC.IT.Controllers.Users
 {
     public class UserValidator : AbstractValidator<SaveUserResource>
     {

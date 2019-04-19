@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace CleanVidly.Controllers.Resources
+namespace NieuweStroom.POC.IT.Controllers.Resources
 {
     public class ValidationErrorResource
     {

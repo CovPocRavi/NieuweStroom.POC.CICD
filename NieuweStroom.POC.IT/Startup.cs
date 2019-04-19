@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
-using CleanVidly.Core.Abstract;
-using CleanVidly.Core.Entities;
-using CleanVidly.Infrastructure;
-using CleanVidly.Persistance;
-using CleanVidly.Persistance.Repositories;
+using NieuweStroom.POC.IT.Core.Abstract;
+using NieuweStroom.POC.IT.Core.Entities;
+using NieuweStroom.POC.IT.Infrastructure;
+using NieuweStroom.POC.IT.Persistance;
+using NieuweStroom.POC.IT.Persistance.Repositories;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -23,7 +23,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 
-namespace CleanVidly
+namespace NieuweStroom.POC.IT
 {
     public class Startup
     {
