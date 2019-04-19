@@ -1,8 +1,8 @@
-using CleanVidly.Core.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using NieuweStroom.POC.IT.Core.Entities;
 
-namespace CleanVidly.Persistance.Configurations
+namespace NieuweStroom.POC.IT.Persistance.Configurations
 {
     public class UserConfiguration : IEntityTypeConfiguration<User>
     {

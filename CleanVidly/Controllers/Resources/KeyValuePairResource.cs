@@ -1,4 +1,4 @@
-namespace CleanVidly.Controllers.Resources
+namespace NieuweStroom.POC.IT.Controllers.Resources
 {
     public class KeyValuePairResource
     {

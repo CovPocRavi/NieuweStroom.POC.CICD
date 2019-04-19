@@ -1,4 +1,4 @@
-namespace CleanVidly.Core.Entities
+namespace NieuweStroom.POC.IT.Core.Entities
 {
     public class UserRole
     {

@@ -2,11 +2,11 @@ using System;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
-using CleanVidly.Infrastructure;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
+using NieuweStroom.POC.IT.Infrastructure;
 
-namespace CleanVidly.IntegrationTest.Helpers
+namespace NieuweStroom.POC.IT.IntegrationTest.Helpers
 {
     public class Request<TStartup> : IDisposable where TStartup : class
     {

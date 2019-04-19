@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using CleanVidly.Core.Abstract;
 using Microsoft.EntityFrameworkCore;
+using NieuweStroom.POC.IT.Core.Abstract;
 
-namespace CleanVidly.Persistance.Repositories
+namespace NieuweStroom.POC.IT.Persistance.Repositories
 {
     public class Repository<T> : IRepository<T> where T : class
     {
