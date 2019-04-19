@@ -1,6 +1,6 @@
 using FluentValidation;
 
-namespace NieuweStroom.POC.IT.Controllers.Categories
+namespace CleanVidly.Controllers.Categories
 {
     public class CategoryValidator : AbstractValidator<SaveCategoryResource>
     {

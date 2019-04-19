@@ -1,4 +1,4 @@
-namespace NieuweStroom.POC.IT.Core.Entities
+namespace CleanVidly.Core.Entities
 {
     public class Category
     {

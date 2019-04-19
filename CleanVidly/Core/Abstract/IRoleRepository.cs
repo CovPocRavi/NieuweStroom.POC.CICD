@@ -1,6 +1,6 @@
-using NieuweStroom.POC.IT.Core.Entities;
+using CleanVidly.Core.Entities;
 
-namespace NieuweStroom.POC.IT.Core.Abstract
+namespace CleanVidly.Core.Abstract
 {
     public interface IRoleRepository : IRepository<Role>
     {

@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using NieuweStroom.POC.IT.Core.Paging;
+using CleanVidly.Core.Paging;
 
-namespace NieuweStroom.POC.IT.Extensions
+namespace CleanVidly.Extensions
 {
     public static class IQueryableExtensions
     {

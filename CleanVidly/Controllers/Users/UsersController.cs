@@ -1,15 +1,15 @@
 using System;
 using System.Threading.Tasks;
 using AutoMapper;
+using CleanVidly.Core.Abstract;
+using CleanVidly.Core.Entities;
+using CleanVidly.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
-using NieuweStroom.POC.IT.Extensions;
+using CleanVidly.Extensions;
 using Microsoft.Extensions.Configuration;
-using NieuweStroom.POC.IT.Core.Abstract;
-using NieuweStroom.POC.IT.Core.Entities;
-using NieuweStroom.POC.IT.Infrastructure;
 
-namespace NieuweStroom.POC.IT.Controllers.Users
+namespace CleanVidly.Controllers.Users
 {
     [Route("/api/users")]
     [ApiController]

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace NieuweStroom.POC.IT.Core.Abstract
+namespace CleanVidly.Core.Abstract
 {
     public interface IRepository<T> where T : class
     {

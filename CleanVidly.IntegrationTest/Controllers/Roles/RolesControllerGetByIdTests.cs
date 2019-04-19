@@ -1,16 +1,16 @@
 using System;
 using System.Net;
 using System.Threading.Tasks;
-using NieuweStroom.POC.IT.IntegrationTest.Extensions;
+using CleanVidly.Controllers.Resources;
+using CleanVidly.Core.Entities;
+using CleanVidly.IntegrationTest.Extensions;
+using CleanVidly.IntegrationTest.Helpers;
+using CleanVidly.Persistance;
 using FluentAssertions;
-using NieuweStroom.POC.IT.Controllers.Resources;
-using NieuweStroom.POC.IT.Core.Entities;
-using NieuweStroom.POC.IT.IntegrationTest.Helpers;
-using NieuweStroom.POC.IT.Persistance;
 using Xunit;
 using Xunit.Abstractions;
 
-namespace NieuweStroom.POC.IT.IntegrationTest.Controllers.Roles
+namespace CleanVidly.IntegrationTest.Controllers.Roles
 {
     public class RolesControllerGetByIdTests : IClassFixture<Request<Startup>>, IClassFixture<DbContextFactory>, IDisposable
     {
