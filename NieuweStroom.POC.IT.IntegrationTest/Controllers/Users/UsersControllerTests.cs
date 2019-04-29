@@ -56,14 +56,14 @@ namespace NieuweStroom.POC.IT.IntegrationTest.Controllers.Users
 
         public Task<HttpResponseMessage> Exec() => request.Post("/api/users", userResource);
 
-        [Fact]
-        //public async Task ShouldAdd_NewUser_IfInputIsValid()
-        //{
-        //    await Exec();
+        //[Fact]
+        ////public async Task ShouldAdd_NewUser_IfInputIsValid()
+        ////{
+        ////    await Exec();
 
-        //    var userInDb = context.Users.FirstOrDefault(u => u.Name == userResource.Name && u.Lastname == userResource.Lastname && u.Email == userResource.Email);
-        //    userInDb.Should().NotBeNull();
-        //}
+        ////    var userInDb = context.Users.FirstOrDefault(u => u.Name == userResource.Name && u.Lastname == userResource.Lastname && u.Email == userResource.Email);
+        ////    userInDb.Should().NotBeNull();
+        ////}
 
         [Fact]
         public async Task ShouldReturn_Header_WithToken()
