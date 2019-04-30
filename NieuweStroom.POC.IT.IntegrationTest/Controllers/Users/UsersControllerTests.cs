@@ -61,7 +61,8 @@ namespace NieuweStroom.POC.IT.IntegrationTest.Controllers.Users
         {
             await Exec();
 
-            var userInDb = context.Users.FirstOrDefault(u => u.Name == userResource.Name && u.Lastname == userResource.Lastname && u.Email == userResource.Email);
+           var userInDb = context.Users.FirstOrDefault(u => u.Name == userResource.Name && u.Lastname == userResource.Lastname && u.Email == userResource.Email); // test
+            
             userInDb.Should().NotBeNull();
         }
 
