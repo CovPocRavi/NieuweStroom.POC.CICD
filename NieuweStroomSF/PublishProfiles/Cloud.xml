@@ -20,7 +20,7 @@
                                     AzureActiveDirectory="true"
                                     ServerCertThumbprint="0123456789012345678901234567890123456789" />
   -->
-  <ClusterConnectionParameters />
+  <ClusterConnectionParameters ConnectionEndpoint="sfclusternieuwstroompoc.westeurope.cloudapp.azure.com:19000" X509Credential="true" ServerCertThumbprint="707895A3011EBA54A1E3D8A27EA02B3F0ADCC52A" FindType="FindByThumbprint" FindValue="707895A3011EBA54A1E3D8A27EA02B3F0ADCC52A" StoreLocation="CurrentUser" StoreName="My" />
   <ApplicationParameterFile Path="..\ApplicationParameters\Cloud.xml" />
   <CopyPackageParameters CompressPackage="true" />
 </PublishProfile>
