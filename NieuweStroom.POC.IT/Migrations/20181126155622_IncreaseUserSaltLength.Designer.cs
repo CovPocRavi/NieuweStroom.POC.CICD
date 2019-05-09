@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace NieuweStroom.POC.IT.Migrations
 {
-    [DbContext(typeof(CleanVidlyDbContext))]
+    [DbContext(typeof(NieuweStroomPocDbContext))]
     [Migration("20181126155622_IncreaseUserSaltLength")]
     partial class IncreaseUserSaltLength
     {

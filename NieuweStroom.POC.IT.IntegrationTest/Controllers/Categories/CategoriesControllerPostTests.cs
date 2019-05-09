@@ -19,14 +19,14 @@ namespace NieuweStroom.POC.IT.IntegrationTest.Controllers.Categories
     {
         private readonly Request<Startup> request;
         private readonly ITestOutputHelper output;
-        private readonly CleanVidlyDbContext context;
+        private readonly NieuweStroomPocDbContext nieuweStroomPocDbContext;
         private string Description;
         private string Token;
         public CategoriesControllerPostTests(ITestOutputHelper output, Request<Startup> request, DbContextFactory contextFactory)
         {
             this.output = output;
             this.request = request;
-            this.context = contextFactory.Context;
+            this.nieuweStroomPocDbContext = contextFactory.nieuweStroomPocDbContext;
 
             Description = "Valid Category";
 
@@ -44,8 +44,8 @@ namespace NieuweStroom.POC.IT.IntegrationTest.Controllers.Categories
 
         public void Dispose()
         {
-            context.Categories.RemoveRange(context.Categories);
-            context.SaveChanges();
+            nieuweStroomPocDbContext.Categories.RemoveRange(nieuweStroomPocDbContext.Categories);
+            nieuweStroomPocDbContext.SaveChanges();
         }
 
         public Task<HttpResponseMessage> Exec() => request.AddAuth(Token).Post("/api/categories", new { Description = Description });
@@ -54,7 +54,7 @@ namespace NieuweStroom.POC.IT.IntegrationTest.Controllers.Categories
         public async Task ShouldSave_Category_IfInputValid()
         {
             await Exec();
-            var categoryInDb = context.Categories.FirstOrDefault(c => c.Description == Description);
+            var categoryInDb = nieuweStroomPocDbContext.Categories.FirstOrDefault(c => c.Description == Description);
             categoryInDb.Should().NotBeNull();
         }
 

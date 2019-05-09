@@ -21,7 +21,7 @@ namespace NieuweStroom.POC.IT.IntegrationTest.Controllers.Users
     {
         private readonly Request<Startup> request;
         private readonly ITestOutputHelper output;
-        private readonly CleanVidlyDbContext context;
+        private readonly NieuweStroomPocDbContext nieuweStroomPocDbContext;
 
         private readonly SaveUserResource userResource;
 
@@ -29,12 +29,12 @@ namespace NieuweStroom.POC.IT.IntegrationTest.Controllers.Users
         {
             this.output = output;
             this.request = request;
-            this.context = contextFactory.Context;
+            this.nieuweStroomPocDbContext = contextFactory.nieuweStroomPocDbContext;
 
             var role = new Role { Description = "Description" };
-            context.Roles.Add(role);
-            context.SaveChanges();
-            context = contextFactory.GetRefreshContext();
+            nieuweStroomPocDbContext.Roles.Add(role);
+            nieuweStroomPocDbContext.SaveChanges();
+            nieuweStroomPocDbContext = contextFactory.GetRefreshContext();
 
             userResource = new SaveUserResource
             {
@@ -49,9 +49,9 @@ namespace NieuweStroom.POC.IT.IntegrationTest.Controllers.Users
 
         public void Dispose()
         {
-            context.Users.RemoveRange(context.Users);
-            context.Roles.RemoveRange(context.Roles);
-            context.SaveChanges();
+            nieuweStroomPocDbContext.Users.RemoveRange(nieuweStroomPocDbContext.Users);
+            nieuweStroomPocDbContext.Roles.RemoveRange(nieuweStroomPocDbContext.Roles);
+            nieuweStroomPocDbContext.SaveChanges();
         }
 
         public Task<HttpResponseMessage> Exec() => request.Post("/api/users", userResource);
@@ -61,7 +61,7 @@ namespace NieuweStroom.POC.IT.IntegrationTest.Controllers.Users
         //{
         //    await Exec();
 
-        //   var userInDb = context.Users.FirstOrDefault(u => u.Name == userResource.Name && u.Lastname == userResource.Lastname && u.Email == userResource.Email); // test
+        //   var userInDb = nieuweStroomPocDbContext.Users.FirstOrDefault(u => u.Name == userResource.Name && u.Lastname == userResource.Lastname && u.Email == userResource.Email); // test
             
         //    userInDb.Should().NotBeNull();
         //}
@@ -105,7 +105,7 @@ namespace NieuweStroom.POC.IT.IntegrationTest.Controllers.Users
         [Fact]
         public async Task ShouldReturns_400_IfEmailAlreadyRegistered()
         {
-            await context.AddAsync(new User()
+            await nieuweStroomPocDbContext.AddAsync(new User()
             {
                 JoinDate = DateTime.Now,
                 Name = userResource.Name,
@@ -114,7 +114,7 @@ namespace NieuweStroom.POC.IT.IntegrationTest.Controllers.Users
                 Password = new byte[64],
                 Salt = new byte[128]
             });
-            await context.SaveChangesAsync();
+            await nieuweStroomPocDbContext.SaveChangesAsync();
 
             var res = await Exec();
             var body = await res.BodyAs<ValidationErrorResource>();

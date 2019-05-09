@@ -20,7 +20,7 @@ namespace NieuweStroom.POC.IT.IntegrationTest.Controllers.Auth
     {
         private readonly Request<Startup> request;
         private readonly ITestOutputHelper output;
-        private readonly CleanVidlyDbContext context;
+        private readonly NieuweStroomPocDbContext nieuweStroomPocDbContext;
 
         private string Email { get; set; }
         private string Password { get; set; }
@@ -30,7 +30,7 @@ namespace NieuweStroom.POC.IT.IntegrationTest.Controllers.Auth
         public AuthControllerTests(Request<Startup> request, DbContextFactory contextFactory, ITestOutputHelper output)
         {
             this.request = request;
-            this.context = contextFactory.Context;
+            this.nieuweStroomPocDbContext = contextFactory.nieuweStroomPocDbContext;
             this.output = output;
 
             CreateUserForTests();
@@ -84,8 +84,8 @@ namespace NieuweStroom.POC.IT.IntegrationTest.Controllers.Auth
 
         public void Dispose()
         {
-            context.Roles.RemoveRange(context.Roles);
-            context.SaveChanges();
+            nieuweStroomPocDbContext.Roles.RemoveRange(nieuweStroomPocDbContext.Roles);
+            nieuweStroomPocDbContext.SaveChanges();
         }
 
         private void CreateUserForTests()
@@ -116,8 +116,8 @@ namespace NieuweStroom.POC.IT.IntegrationTest.Controllers.Auth
                 }
             });
 
-            context.Users.Add(user);
-            context.SaveChanges();
+            nieuweStroomPocDbContext.Users.Add(user);
+            nieuweStroomPocDbContext.SaveChanges();
         }
     }
 }

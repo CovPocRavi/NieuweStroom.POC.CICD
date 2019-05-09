@@ -39,7 +39,7 @@ namespace NieuweStroom.POC.IT
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddAutoMapper();
-            services.AddDbContextPool<CleanVidlyDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("vidly_db")));
+            services.AddDbContextPool<NieuweStroomPocDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("vidly_db")));
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();

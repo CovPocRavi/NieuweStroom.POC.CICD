@@ -16,26 +16,26 @@ namespace NieuweStroom.POC.IT.IntegrationTest.Controllers.Roles
     {
         private readonly Request<Startup> request;
         private readonly ITestOutputHelper output;
-        private readonly CleanVidlyDbContext context;
+        private readonly NieuweStroomPocDbContext nieuweStroomPocDbContext;
         public RolesControllerGetByIdTests(ITestOutputHelper output, Request<Startup> request, DbContextFactory contextFactory)
         {
             this.output = output;
             this.request = request;
-            this.context = contextFactory.Context;
+            this.nieuweStroomPocDbContext = contextFactory.nieuweStroomPocDbContext;
         }
 
         public void Dispose()
         {
-            context.Roles.RemoveRange(context.Roles);
-            context.SaveChanges();
+            nieuweStroomPocDbContext.Roles.RemoveRange(nieuweStroomPocDbContext.Roles);
+            nieuweStroomPocDbContext.SaveChanges();
         }
 
         [Fact]
         public async Task ShouldReturn_Roles_ById()
         {
             var role = new Role() { Description = "Role 1" };
-            await context.Roles.AddAsync(role);
-            await context.SaveChangesAsync();
+            await nieuweStroomPocDbContext.Roles.AddAsync(role);
+            await nieuweStroomPocDbContext.SaveChangesAsync();
 
             var response = await request.Get($"/api/roles/{role.Id}");
             var body = await response.BodyAs<KeyValuePairResource>();

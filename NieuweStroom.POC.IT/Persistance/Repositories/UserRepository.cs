@@ -9,16 +9,16 @@ namespace NieuweStroom.POC.IT.Persistance.Repositories
 {
     public class UserRepository : Repository<User>, IUserRepository
     {
-        private readonly CleanVidlyDbContext context;
+        private readonly NieuweStroomPocDbContext nieuweStroomPocDbContext;
 
-        public UserRepository(CleanVidlyDbContext context) : base(context)
+        public UserRepository(NieuweStroomPocDbContext nieuweStroomPocDbContext) : base(nieuweStroomPocDbContext)
         {
-            this.context = context;
+            this.nieuweStroomPocDbContext = nieuweStroomPocDbContext;
         }
 
         public Task<User> GetWithRoles(Expression<Func<User, bool>> predicate)
         {
-            return context.Users
+            return nieuweStroomPocDbContext.Users
                 .Include(u => u.UserRoles)
                     .ThenInclude(ur => ur.Role)
                 .FirstOrDefaultAsync(predicate);

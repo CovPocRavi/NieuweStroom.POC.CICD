@@ -18,7 +18,7 @@ namespace NieuweStroom.POC.IT.IntegrationTest.Controllers.Categories
     {
         private readonly Request<Startup> request;
         private readonly ITestOutputHelper output;
-        private readonly CleanVidlyDbContext context;
+        private readonly NieuweStroomPocDbContext nieuweStroomPocDbContext;
 
         private int Id;
         private string Description;
@@ -27,18 +27,18 @@ namespace NieuweStroom.POC.IT.IntegrationTest.Controllers.Categories
         {
             this.output = output;
             this.request = request;
-            this.context = contextFactory.Context;
+            this.nieuweStroomPocDbContext = contextFactory.nieuweStroomPocDbContext;
 
             Description = "New Description";
 
             var category = new Category { Description = "Description" };
 
-            context.Add(category);
-            context.SaveChanges();
+            nieuweStroomPocDbContext.Add(category);
+            nieuweStroomPocDbContext.SaveChanges();
 
             Id = category.Id;
 
-            context = contextFactory.GetRefreshContext();
+            nieuweStroomPocDbContext = contextFactory.GetRefreshContext();
 
             var user = new User()
             {
@@ -53,8 +53,8 @@ namespace NieuweStroom.POC.IT.IntegrationTest.Controllers.Categories
 
         public void Dispose()
         {
-            context.Categories.RemoveRange(context.Categories);
-            context.SaveChanges();
+            nieuweStroomPocDbContext.Categories.RemoveRange(nieuweStroomPocDbContext.Categories);
+            nieuweStroomPocDbContext.SaveChanges();
         }
 
         public Task<HttpResponseMessage> Exec() =>
@@ -66,7 +66,7 @@ namespace NieuweStroom.POC.IT.IntegrationTest.Controllers.Categories
         {
             await Exec();
 
-            var categoryInDb = context.Categories.FirstOrDefault(c => c.Id == Id);
+            var categoryInDb = nieuweStroomPocDbContext.Categories.FirstOrDefault(c => c.Id == Id);
 
             categoryInDb.Description.Should().Be("New Description");
         }

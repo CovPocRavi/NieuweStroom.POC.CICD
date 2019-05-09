@@ -19,7 +19,7 @@ namespace NieuweStroom.POC.IT.IntegrationTest.Controllers.Roles
     {
         private readonly Request<Startup> request;
         private readonly ITestOutputHelper output;
-        private readonly CleanVidlyDbContext context;
+        private readonly NieuweStroomPocDbContext nieuweStroomPocDbContext;
 
         private string Description;
         private string Token;
@@ -27,7 +27,7 @@ namespace NieuweStroom.POC.IT.IntegrationTest.Controllers.Roles
         {
             this.output = output;
             this.request = request;
-            this.context = contextFactory.Context;
+            this.nieuweStroomPocDbContext = contextFactory.nieuweStroomPocDbContext;
 
             Description = "Valid Role";
 
@@ -44,8 +44,8 @@ namespace NieuweStroom.POC.IT.IntegrationTest.Controllers.Roles
 
         public void Dispose()
         {
-            context.Roles.RemoveRange(context.Roles);
-            context.SaveChanges();
+            nieuweStroomPocDbContext.Roles.RemoveRange(nieuweStroomPocDbContext.Roles);
+            nieuweStroomPocDbContext.SaveChanges();
         }
 
         public Task<HttpResponseMessage> Exec() =>
@@ -55,7 +55,7 @@ namespace NieuweStroom.POC.IT.IntegrationTest.Controllers.Roles
         public async Task ShouldSave_Category_IfInputValid()
         {
             await Exec();
-            var roleInDb = context.Roles.FirstOrDefault(c => c.Description == Description);
+            var roleInDb = nieuweStroomPocDbContext.Roles.FirstOrDefault(c => c.Description == Description);
             roleInDb.Should().NotBeNull();
         }
 

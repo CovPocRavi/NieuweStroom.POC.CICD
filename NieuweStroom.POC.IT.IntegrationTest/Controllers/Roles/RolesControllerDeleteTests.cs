@@ -19,7 +19,7 @@ namespace NieuweStroom.POC.IT.IntegrationTest.Controllers.Roles
     {
         private readonly Request<Startup> request;
         private readonly ITestOutputHelper output;
-        private readonly CleanVidlyDbContext context;
+        private readonly NieuweStroomPocDbContext nieuweStroomPocDbContext;
         private int Id;
 
         private string Token;
@@ -28,16 +28,16 @@ namespace NieuweStroom.POC.IT.IntegrationTest.Controllers.Roles
         {
             this.output = output;
             this.request = request;
-            this.context = contextFactory.Context;
+            this.nieuweStroomPocDbContext = contextFactory.nieuweStroomPocDbContext;
 
             var role = new Role { Description = "Description" };
 
-            context.Roles.Add(role);
-            context.SaveChanges();
+            nieuweStroomPocDbContext.Roles.Add(role);
+            nieuweStroomPocDbContext.SaveChanges();
 
             Id = role.Id;
 
-            context = contextFactory.GetRefreshContext();
+            nieuweStroomPocDbContext = contextFactory.GetRefreshContext();
 
             var user = new User()
             {
@@ -52,8 +52,8 @@ namespace NieuweStroom.POC.IT.IntegrationTest.Controllers.Roles
 
         public void Dispose()
         {
-            context.Roles.RemoveRange(context.Roles);
-            context.SaveChanges();
+            nieuweStroomPocDbContext.Roles.RemoveRange(nieuweStroomPocDbContext.Roles);
+            nieuweStroomPocDbContext.SaveChanges();
         }
 
         public Task<HttpResponseMessage> Exec() =>
@@ -75,7 +75,7 @@ namespace NieuweStroom.POC.IT.IntegrationTest.Controllers.Roles
         {
             await Exec();
 
-            var roleInDb = context.Roles.FirstOrDefault(c => c.Id == Id);
+            var roleInDb = nieuweStroomPocDbContext.Roles.FirstOrDefault(c => c.Id == Id);
 
             roleInDb.Should().BeNull();
         }

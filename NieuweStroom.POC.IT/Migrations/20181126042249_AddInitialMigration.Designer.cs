@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace NieuweStroom.POC.IT.Migrations
 {
-    [DbContext(typeof(CleanVidlyDbContext))]
+    [DbContext(typeof(NieuweStroomPocDbContext))]
     [Migration("20181126042249_AddInitialMigration")]
     partial class AddInitialMigration
     {

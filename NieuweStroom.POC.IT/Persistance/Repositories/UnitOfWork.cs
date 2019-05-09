@@ -5,15 +5,15 @@ namespace NieuweStroom.POC.IT.Persistance.Repositories
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly CleanVidlyDbContext context;
+        private readonly NieuweStroomPocDbContext nieuweStroomPocDbContext;
 
-        public UnitOfWork(CleanVidlyDbContext context)
+        public UnitOfWork(NieuweStroomPocDbContext nieuweStroomPocDbContext)
         {
-            this.context = context;
+            this.nieuweStroomPocDbContext = nieuweStroomPocDbContext;
         }
         public Task<int> SaveAsync()
         {
-            return context.SaveChangesAsync();
+            return nieuweStroomPocDbContext.SaveChangesAsync();
         }
     }
 }

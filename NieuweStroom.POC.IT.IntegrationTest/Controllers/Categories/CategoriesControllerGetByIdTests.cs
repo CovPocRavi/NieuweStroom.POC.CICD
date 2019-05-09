@@ -16,26 +16,26 @@ namespace NieuweStroom.POC.IT.IntegrationTest.Controllers.Categories
     {
         private readonly Request<Startup> request;
         private readonly ITestOutputHelper output;
-        private readonly CleanVidlyDbContext context;
+        private readonly NieuweStroomPocDbContext nieuweStroomPocDbContext;
         public CategoriesControllerGetByIdTests(ITestOutputHelper output, Request<Startup> request, DbContextFactory contextFactory)
         {
             this.output = output;
             this.request = request;
-            this.context = contextFactory.Context;
+            this.nieuweStroomPocDbContext = contextFactory.nieuweStroomPocDbContext;
         }
 
         public void Dispose()
         {
-            context.Categories.RemoveRange(context.Categories);
-            context.SaveChanges();
+            nieuweStroomPocDbContext.Categories.RemoveRange(nieuweStroomPocDbContext.Categories);
+            nieuweStroomPocDbContext.SaveChanges();
         }
 
         [Fact]
         public async Task ShouldReturn_Cateogory_ById()
         {
             var category = new Category() { Description = "Category1" };
-            await context.Categories.AddAsync(category);
-            await context.SaveChangesAsync();
+            await nieuweStroomPocDbContext.Categories.AddAsync(category);
+            await nieuweStroomPocDbContext.SaveChangesAsync();
 
             var response = await request.Get($"/api/categories/{category.Id}");
             var body = await response.BodyAs<KeyValuePairResource>();

@@ -5,10 +5,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace NieuweStroom.POC.IT.Persistance
 {
-    public class CleanVidlyDbContext : DbContext
+    public class NieuweStroomPocDbContext : DbContext
     {
 
-        public CleanVidlyDbContext(DbContextOptions<CleanVidlyDbContext> options) : base(options) { }
+        public NieuweStroomPocDbContext(DbContextOptions<NieuweStroomPocDbContext> options) : base(options) { }
 
         public DbSet<Category> Categories { get; set; }
         public DbSet<Role> Roles { get; set; }

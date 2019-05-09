@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace NieuweStroom.POC.IT.Migrations
 {
-    [DbContext(typeof(CleanVidlyDbContext))]
+    [DbContext(typeof(NieuweStroomPocDbContext))]
     partial class CleanVidlyDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

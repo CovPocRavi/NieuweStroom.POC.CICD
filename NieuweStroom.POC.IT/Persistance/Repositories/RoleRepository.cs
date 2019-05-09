@@ -6,11 +6,11 @@ namespace NieuweStroom.POC.IT.Persistance.Repositories
 {
     public class RoleRepository : Repository<Role>, IRoleRepository
     {
-        private readonly CleanVidlyDbContext context;
+        private readonly NieuweStroomPocDbContext nieuweStroomPocDbContext;
 
-        public RoleRepository(CleanVidlyDbContext context) : base(context)
+        public RoleRepository(NieuweStroomPocDbContext nieuweStroomPocDbContext) : base(nieuweStroomPocDbContext)
         {
-            this.context = context;
+            this.nieuweStroomPocDbContext = nieuweStroomPocDbContext;
         }
     }
 }

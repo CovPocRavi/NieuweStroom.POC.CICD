@@ -10,32 +10,32 @@ namespace NieuweStroom.POC.IT.IntegrationTest.Helpers
 {
     public class DbContextFactory : IDisposable
     {
-        public CleanVidlyDbContext Context { get; private set; }
+        public NieuweStroomPocDbContext nieuweStroomPocDbContext { get; private set; }
         public DbContextFactory()
         {
-            var dbBuilder = GetContextBuilderOptions<CleanVidlyDbContext>("vidly_db");
+            var dbBuilder = GetContextBuilderOptions<NieuweStroomPocDbContext>("vidly_db");
 
-            Context = new CleanVidlyDbContext(dbBuilder.Options);
-            Context.Database.Migrate();
+            nieuweStroomPocDbContext = new NieuweStroomPocDbContext(dbBuilder.Options);
+            nieuweStroomPocDbContext.Database.Migrate();
         }
 
         public void Dispose()
         {
-            Context.Dispose();
+            nieuweStroomPocDbContext.Dispose();
         }
 
-        public CleanVidlyDbContext GetRefreshContext()
+        public NieuweStroomPocDbContext GetRefreshContext()
         {
-            var dbBuilder = GetContextBuilderOptions<CleanVidlyDbContext>("vidly_db");
-            Context = new CleanVidlyDbContext(dbBuilder.Options);
+            var dbBuilder = GetContextBuilderOptions<NieuweStroomPocDbContext>("vidly_db");
+            nieuweStroomPocDbContext = new NieuweStroomPocDbContext(dbBuilder.Options);
 
-            return Context;
+            return nieuweStroomPocDbContext;
         }
 
-        private DbContextOptionsBuilder<CleanVidlyDbContext> GetContextBuilderOptions<T>(string connectionStringName)
+        private DbContextOptionsBuilder<NieuweStroomPocDbContext> GetContextBuilderOptions<T>(string connectionStringName)
         {
             var connectionString = ConfigurationSingleton.GetConfiguration().GetConnectionString(connectionStringName);
-            var contextBuilder = new DbContextOptionsBuilder<CleanVidlyDbContext>();
+            var contextBuilder = new DbContextOptionsBuilder<NieuweStroomPocDbContext>();
             var servicesCollection = new ServiceCollection().AddEntityFrameworkSqlServer().BuildServiceProvider();
 
             contextBuilder.UseSqlServer(connectionString).UseInternalServiceProvider(servicesCollection);

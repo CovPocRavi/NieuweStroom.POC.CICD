@@ -6,11 +6,11 @@ namespace NieuweStroom.POC.IT.Persistance.Repositories
 {
     public class CategoryRepository : Repository<Category>, ICategoryRepository
     {
-        private readonly CleanVidlyDbContext context;
+        private readonly NieuweStroomPocDbContext nieuweStroomPocDbContext;
 
-        public CategoryRepository(CleanVidlyDbContext context) : base(context)
+        public CategoryRepository(NieuweStroomPocDbContext nieuweStroomPocDbContext) : base(nieuweStroomPocDbContext)
         {
-            this.context = context;
+            this.nieuweStroomPocDbContext = nieuweStroomPocDbContext;
         }
     }
 }
