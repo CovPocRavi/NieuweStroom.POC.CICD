@@ -28,7 +28,7 @@ namespace NieuweStroom.POC.IT.Controllers.Auth
         public AuthController(JwtAuthentication jwtAuthentication, IUserRepository userRepository)
         {
             this.userRepository = userRepository;
-            this.jwtAuthentication = jwtAuthentication; //gfdgfdg
+            this.jwtAuthentication = jwtAuthentication; //gfdgfdg blbblblblblbl
         }
 
         [HttpPost]
