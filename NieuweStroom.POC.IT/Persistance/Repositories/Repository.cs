@@ -11,7 +11,7 @@ namespace NieuweStroom.POC.IT.Persistance.Repositories
     public class Repository<T> : IRepository<T> where T : class
     {
         private readonly DbSet<T> dbSet;
-        public Repository(DbContext nieuweStroomPocDbContext) => this.dbSet = nieuweStroomPocDbContext.Set<T>();//testing trigger burt
+        public Repository(DbContext nieuweStroomPocDbContext) => this.dbSet = nieuweStroomPocDbContext.Set<T>();//testing trigger b
 
         public Task<List<T>> GetFindAllAsync()
         {
